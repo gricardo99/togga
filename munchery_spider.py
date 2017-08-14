@@ -40,7 +40,7 @@ class MuncherySpider():
 			form = self.driver.find_element_by_xpath('//*[@class="signup-login-form"]')
 			form.find_element_by_xpath('.//*[@class="user-input email"]').send_keys('iam@alexhoang.net')
 			form.find_element_by_xpath('.//*[@class="user-input zip-code"]').send_keys('94011')
-			form.find_element_by_xpath('.//*[@class="extra-large orange button"]').click()
+			form.find_element_by_xpath('.//*[@class="large orange button"]').click()
 			sleep(randint(3,5))
 		except Exception:
 			pass
